@@ -1,50 +1,109 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>Go with the flow</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section>
+            <h1>Hur vi lärde oss älska flöde</h1>
+            <h3>Och vad som gjorde att det inte fungerade</h3>
+            <p>
+                <small>Martin Carlsson / <a href="http://twitter.com/ystromm">@ystromm</a></small>
+            </p>
+        </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+        <section>
+            <h1>Lite för långa möten</h1>
+            <p><a href="https://sv.wikipedia.org/wiki/Egodepletion">Baumeister ego depletion</a></p>
+        </section>
+        <section>
+            <h1>Uttröttade gissningar och verktyg</h1>
+            <p>Skapar irrelevanta arbetsupggifter</p>
+            <p>Onödiga åtaganden</p>
+        </section>
+        <section>
+            <h1>I känslan av att vi har en plan</h1>
+            <p>Kö bild</p>
+            <p>Köar vi upp</p>
+        </section>
+        <section>
+            <h1>Installation och befrielse</h1>
+            <p>Skapade lite utrymme för att tänka nytt</p>
+        </section>
+        <section>
+            <h1>Användarsynpunkter och småfel</h1>
+        </section>
+        <section>
+            <h1>8 installation på en månad</h1>
+        </section>
+        <section>
+            <h1>Dags för nya funktioner</h1>
+        </section>
+        <section>
+            <h2>Vad är fel med den här bilden?</h2>
+        </section>
+        <section>
+            <h2>Utspritt ansvar</h2>
+        </section>
+        <section>
+            <h2>Organisation och flytt</h2>
+        </section>
+        <section>
+            <h2>Jul och nyår</h2>
+        </section>
+        <section>
+            <h1>Verktygen saknas</h1>
+            <p>Inga feature toggles</p>
+            <p>Att förbereda ger en känsla av effektivitet men också köer och låsningar</p>
+        </section>
+        <section>
+            <h1>Tack</h1>
+        </section>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
